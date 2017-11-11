@@ -16,7 +16,7 @@
 	
 	sscanf($_REQUEST['anni'] ,"%d-%d", $min, $max);
 	
-	$sql = "SELECT Nome, Cognome, Email, Eta, Titolo, Telefono FROM candidatura WHERE Titolo='".$_REQUEST['titolo']."' and Posizione='".$_REQUEST['pos']."' and Sede='".$_REQUEST['sede']."' and (Eta>='".$min."' and Eta<='".$max."')";
+	$sql = "SELECT Nome, Cognome, Email, Eta, Titolo, Telefono FROM candidatura WHERE Titolo='".$_REQUEST['titolo']."' and Posizione='".$_REQUEST['pos']."' and (Sede='".$_REQUEST['sede']."' || Sede='Nessuna Preferenza') and (Eta>='".$min."' and Eta<='".$max."')";
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) 

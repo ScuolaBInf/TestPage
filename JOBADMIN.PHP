@@ -41,7 +41,6 @@
 			<option value="Milano">Milano</option>
 			<option value="Roma">Roma</option>
 			<option value="Genova">Genova</option>
-			<option value="Nessuna Preferenza">Nessuna Preferenza</option>
 		</select> 
 		
 		<div id="txtHint"></div>
