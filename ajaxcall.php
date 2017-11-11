@@ -31,8 +31,8 @@
 			echo "</tr>";
 			while($row = $result->fetch_assoc()) 
 				{
-					echo "<tr>";
-					echo "<td title='".$row["Email"].", ".$row["Telefono"]."'>".$row["Nome"]."</td>";
+					echo "<tr title='".$row["Email"].", ".$row["Telefono"]."'>";
+					echo "<td>".$row["Nome"]."</td>";
 					echo "<td>".$row["Cognome"]."</td>";
 					echo "<td>".$row["Titolo"]."</td>";
 					echo "<td>".$row["Eta"]."</td>";
